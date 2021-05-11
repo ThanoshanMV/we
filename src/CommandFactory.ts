@@ -9,15 +9,11 @@ export class CommandFactory {
       switch(commandName){
         case "hi":
           return new HiCommand();
-          break;
-        case "hi":
+        case "status":
           return new StatusCommand();
-          break;
         case "help":
           return new HelpCommand();
-          break;
         default:
-          // throw error
           return new ErrorCommand();
       }
     }

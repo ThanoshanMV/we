@@ -4,18 +4,22 @@
   "description": "A friendly TypeScript CLI tool :)",
   "main": "/bin/we",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build":  "tsc -p .",
+    "test": "mocha lib/test",
+    "build": "tsc -p .",
     "start": "npm run build && npm i -g"
   },
   "bin": {
     "we": "./bin/we"
   },
-  "keywords": ["TypeScript, CLI"],
+  "keywords": [
+    "TypeScript, CLI"
+  ],
   "author": "Thanoshan MV",
   "license": "MIT",
   "devDependencies": {
+    "@types/mocha": "^8.2.2",
     "@types/node": "^14.14.37",
+    "mocha": "^8.4.0",
     "typescript": "^4.2.4"
   },
   "dependencies": {
