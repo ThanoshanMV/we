@@ -4,4 +4,8 @@ export class StatusCommand implements Command{
     run(): void {
         console.log(`Checkout the status`);
     }
+
+    getContent(): string {
+        return "Checkout the status";
+    }
 }

@@ -15,4 +15,8 @@ export class HelpCommand implements Command{
         `;
       console.log(helpText);
     }
+
+    getContent(): string {
+      return "we is a friendly CLI! usage: we <command> commands can be: hi: used to welcome to the userhelp: used to print the usage guide";
+    }
 }

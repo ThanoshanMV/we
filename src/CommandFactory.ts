@@ -17,4 +17,17 @@ export class CommandFactory {
           return new ErrorCommand();
       }
     }
+
+    getCommandContent(commandName: string): string {
+      switch(commandName){
+        case "hi":
+          return new HiCommand().getContent();
+        case "status":
+          return new StatusCommand().getContent();
+        case "help":
+          return new HelpCommand().getContent();
+        default:
+          return new ErrorCommand().getContent();
+      }
+    }
 }
