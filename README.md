@@ -1,7 +1,14 @@
 # we
 A friendly TypeScript CLI :)
 
-### Development
+Commands
+* `we`
+* `we hi`
+* `we status`
+* `we help` 
+
+
+## Development
 * Pull requests are always welcome. Pick an issue and help us out to make this CLI awesome!
   
 ###	Development guide
@@ -13,3 +20,5 @@ A friendly TypeScript CLI :)
   * ```$ npm install```
 * Start and have fun!
   * ```$ npm start```
+
+
