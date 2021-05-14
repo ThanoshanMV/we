@@ -1,5 +1,6 @@
 import {CommandFactory} from '../CommandFactory';
 import { ErrorCommand } from '../commands/ErrorCommand';
+import { FunCommand } from '../commands/FunCommand';
 import { HelpCommand } from '../commands/HelpCommand';
 import { HiCommand } from '../commands/HiCommand';
 import { StatusCommand } from '../commands/StatusCommand';
@@ -47,5 +48,16 @@ describe('Test Status Command', () => {
 
     it('Status command\'s type', () => {
         assert.equal((new CommandFactory().getCommand("status") instanceof StatusCommand), true);
+    });
+});
+
+describe('Test Fun Command', () => {
+    it('Fun command\'s content', () => {
+        // assert.equal(actual, expected);
+        assert.equal((new CommandFactory().getCommandContent("fun")), "This is a command to make you fun");
+    });
+
+    it('Fun command\'s type', () => {
+        assert.equal((new CommandFactory().getCommand("fun") instanceof FunCommand), true);
     });
 });
