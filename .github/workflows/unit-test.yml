@@ -1,7 +1,14 @@
 # The name of the workflow
 name: unit-test
-# Triggers the workflow on push or pull request events
-on: [push, pull_request]
+# Triggers this workflow on push and on pull request events only for the master branch
+on: 
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
 jobs:
   Windows:
     runs-on: windows-latest
