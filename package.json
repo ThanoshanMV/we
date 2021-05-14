@@ -5,7 +5,7 @@
   "main": "/bin/we",
   "scripts": {
     "test": "mocha lib/test",
-    "build": "tsc -p .",
+    "build": "tsc",
     "start": "npm run build && npm i -g"
   },
   "bin": {
