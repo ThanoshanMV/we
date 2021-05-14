@@ -1,6 +1,5 @@
 import {CommandFactory} from './CommandFactory';
 
-const chalk = require("chalk");
 const args = process.argv;
 const userArgs = args.slice(2);
 
