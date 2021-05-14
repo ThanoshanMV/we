@@ -17,6 +17,6 @@ export class HelpCommand implements Command{
     }
 
     getContent(): string {
-      return "we is a friendly CLI! usage: we <command> commands can be: hi: used to welcome to the userhelp: used to print the usage guid";
+      return "we is a friendly CLI! usage: we <command> commands can be: hi: used to welcome to the userhelp: used to print the usage guide";
     }
 }
