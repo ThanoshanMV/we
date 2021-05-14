@@ -3,6 +3,7 @@ import {HiCommand} from './commands/HiCommand';
 import {HelpCommand} from './commands/HelpCommand';
 import {StatusCommand} from './commands/StatusCommand';
 import {ErrorCommand} from './commands/ErrorCommand';
+import { FunCommand } from './commands/FunCommand';
 
 export class CommandFactory {
     getCommand(commandName: string): Command {
@@ -13,6 +14,8 @@ export class CommandFactory {
           return new StatusCommand();
         case "help":
           return new HelpCommand();
+        case "fun":
+          return new FunCommand();
         default:
           return new ErrorCommand();
       }
@@ -26,6 +29,8 @@ export class CommandFactory {
           return new StatusCommand().getContent();
         case "help":
           return new HelpCommand().getContent();
+        case "fun":
+          return new FunCommand().getContent();
         default:
           return new ErrorCommand().getContent();
       }
